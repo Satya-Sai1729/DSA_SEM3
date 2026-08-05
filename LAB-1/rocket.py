@@ -1,7 +1,7 @@
 def launch(n):
     if n==0:
         print("Launch")
-    return
+        return
     print(n)
     launch(n-1)
 n=int(input("Enter the duration of the Countdown : "))

@@ -1,0 +1,20 @@
+def search(l,h,target,arr):
+    while l<=h:
+        m=(l+h)//2
+        if arr[m]==target:
+            return m
+        elif arr[m]<target:
+            l=m+1
+        else:
+            h=m-1
+    return -1
+
+a=input("Enter Elelments in Array in Increasing Order : ")
+arr=[int(i) for i in a.split()]
+
+target=int(input("Enter Element to be searched : "))
+s=search(0,len(arr)-1,target,arr)
+if s==-1:
+    print("Element not found")
+else:
+    print("Element found at index : ",s)

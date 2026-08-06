@@ -12,7 +12,6 @@ for i in range(n):
     a=int(input(f"Enter ID of {i+1} Employee : "))
     arr.append(a)
 print()
-arr.sort()
 target=int(input("Enter empoyee ID to be searched : "))
 s=search(target,arr,0)
 if s==-1:
@@ -32,4 +31,5 @@ def search(l,h,target,arr):
         else:
             h=m-1
     return -1
+arr.sort()
 """

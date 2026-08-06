@@ -20,6 +20,9 @@ Implements Insertion Sort algorithm.
 ### 6. selection.py
 Implements Selection Sort algorithm.
 
+### 7. merge.py
+Implements Merge Sort algorithm.
+
 ## Concepts Covered
 - Searching Algorithms
 - Sorting Algorithms
@@ -32,6 +35,7 @@ Implements Selection Sort algorithm.
 - Bubble Sort
 - Insertion Sort
 - Selection Sort
+- Merge Sort
 
 ## Language
 Python 3

@@ -38,6 +38,9 @@ class Stack_Array:
             print("Stack elements:")
             for i in range(len(self.stack) - 1, -1, -1):
                 print(self.stack[i])
+
+    def count(self):
+        print("Number of elements:", len(self.stack))
             
 
 s1=Stack_Array(10)

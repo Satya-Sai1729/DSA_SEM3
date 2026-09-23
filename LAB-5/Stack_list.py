@@ -43,10 +43,38 @@ class Stack_Array:
         print("Number of elements:", len(self.stack))
             
 
-s1=Stack_Array(10)
-s1.stack_push(49)
-s1.stack_push(48)
-s1.stack_push(32)
-s1.stack_push(8)
-s1.display()
-s1.top()
+s = Stack_Array()
+
+while True:
+    print("\n----- STACK MENU -----")
+    print("1. Push")
+    print("2. Pop")
+    print("3. Peek")
+    print("4. Display")
+    print("5. Count")
+    print("6. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        data = int(input("Enter the element: "))
+        s.stack_push(data)
+
+    elif choice == 2:
+        s.stack_pop()
+
+    elif choice == 3:
+        s.peek()
+
+    elif choice == 4:
+        s.display()
+
+    elif choice == 5:
+        s.count()
+
+    elif choice == 6:
+        print("Exiting program...")
+        break
+
+    else:
+        print("Invalid choice.")

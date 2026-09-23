@@ -1,35 +1,37 @@
 class Stack_Array:
-    def __init__(self,length):
-        self.length=length
-        self.stack=[]
-        self.top=-1
+    def __init__(self, length):
+        self.length = length
+        self.stack = []
+        self.top = -1
 
+    def stack_push(self, data):
+        if len(self.stack) == self.length:
+            print("Stack is full")
+            return
 
-    def stack_push(self,data):
-        if len(self.stack) == 0:
-            print("Stack is empty")
-        self.data=data
         self.stack.append(data)
-        self.top+=1
-        self.length-=1
+        self.top += 1
         print("Element pushed successfully")
 
     def stack_pop(self):
         if len(self.stack) == 0:
-            return "Stack is Empty"
-        print(stack.pop(),"removed")
-    
-            
+            print("Stack is empty")
+            return
+
+        print(self.stack.pop(), "removed")
+        self.top -= 1
+
     def peek(self):
         if len(self.stack) == 0:
             print("Stack is empty")
         else:
-            print("Top element:", stack[-1])
+            print("Top element:", self.stack[-1])
 
     def top_index(self):
         if len(self.stack) == 0:
             print("Stack is empty")
-        print(self.stack[self.top])
+        else:
+            print("Top element index:", self.top)
 
     def display(self):
         if len(self.stack) == 0:
@@ -41,9 +43,9 @@ class Stack_Array:
 
     def count(self):
         print("Number of elements:", len(self.stack))
-            
 
-s = Stack_Array()
+
+s = Stack_Array(5)
 
 while True:
     print("\n----- STACK MENU -----")
